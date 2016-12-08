@@ -1,0 +1,18 @@
+<div class="sign-in-bg">
+  <div class="container-fluid">
+    <div class="inner-container">
+      <div class="sign-in-logo">
+        <%# image_tag 'logo@2x.png' %>
+      </div>
+      <div class="login-form">
+        <h2>Sign in</h2>
+        <%= form_tag sessions_path do %>
+          <%= text_field_tag :username, nil, placeholder: 'Username' %><br />
+          <%= password_field_tag :password, nil, placeholder: 'Password' %><br />
+          <%= submit_tag 'Sign In', class: 'login-form-button submit' %>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>
