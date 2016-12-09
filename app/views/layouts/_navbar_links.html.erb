@@ -1,0 +1,13 @@
+<% if user_signed_in? %>
+  <ul class="nav navbar-nav navbar-right">
+    <li>
+      <%= link_to "My Profile", user_path(current_user) %>
+    </li>
+    <li>
+      <%= link_to "Welcome #{current_user.username}!" %>
+    </li>
+    <li>
+      <%= link_to "Log Out", sessions_path, method: :delete, data: {confirm: "Are you sure you want to log out?"} %>
+    </li>
+  </ul>
+<% end %>

@@ -1,5 +1,12 @@
 // Custom bootstrap variables must be set or imported before bootstrap itself.
+// $navbar-default-bg: black;
+
+@import "bootstrap-sprockets";
 @import "bootstrap";
+@import "rooms";
+// @import "messages";
+@import "users";
+
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -14,3 +21,10 @@
  * It is generally better to create a new file per style scope.
  *
  */
+.message {
+  padding: 5px;
+  background-color: lightblue;
+  margin: 1px;
+  border-radius: 5px;
+
+}
