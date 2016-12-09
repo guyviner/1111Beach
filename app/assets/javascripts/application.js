@@ -12,6 +12,23 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap-sprockets
 //= require turbolinks
+//= require bootstrap-sprockets
+
 //= require_tree .
+
+$('document').ready(function() {
+  setTimeout(function() {
+    $('.flash').fadeOut();
+  }, 1500);
+});
+$('document').ready(function() {
+  setTimeout(function() {
+    $('.alert').fadeOut();
+  }, 1500);
+});
+$('document').ready(function() {
+  setTimeout(function() {
+    $('.notice').fadeOut();
+  }, 1500);
+});

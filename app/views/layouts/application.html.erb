@@ -10,22 +10,24 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
   </head>
 
   <body>
-    <nav>
-          <div>
-            1111 Beach | 
-            <%= link_to "Home", root_path %> |
-              <% if user_signed_in? %> |
-                <%= link_to "My Profile", user_path(current_user) %> |
-                <%= link_to "Welcome #{current_user.username}!" %> |
-                <%= link_to "Log Out", sessions_path, method: :delete, data: {confirm: "Are you sure you want to log out?"} %> |
-            <% end %>
-          </div>
-        </nav>
 
-    <%= notice || alert %>
-    <%= yield %>
+    <div class="container">
+    <%= render partial: 'layouts/navbar' %>
+
+    <div class="container-fluid">
+      <% if notice %>
+        <div class="alert alert-success"><%= notice %></div>
+      <% end %>
+      <% if alert %>
+        <div class="alert alert-danger"><%= alert %></div>
+      <% end %>
+    </div>
+
+      <%= yield %>
+    </div>
 </body>
 </html>
