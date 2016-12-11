@@ -8,7 +8,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to "1111 booya", root_path, class: "navbar-brand" %>
+      <%= link_to root_path do %>
+         <%= image_tag "palmtreeSM.png", alt: "Palm Tree", class: "palmtree" %>
+      <% end %>
+      <%= link_to root_path do %>
+         <%= image_tag "1111beachSM.png", alt: "1111 Beach", class: "beach1111" %>
+      <% end %>
+      <%# link_to root_path, class: "navbar-brand" %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
