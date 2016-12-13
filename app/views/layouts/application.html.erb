@@ -19,7 +19,7 @@
     <!-- <div class="container"> -->
     <%= render partial: 'layouts/navbar' %>
 
-    <div class="container-fluid">
+    <div class="container">
       <% if notice %>
         <div class="alert alert-success"><%= notice %></div>
       <% end %>
@@ -28,7 +28,9 @@
       <% end %>
     </div>
 
+    <div class="container">
       <%= yield %>
+    </div>
     <!-- </div> -->
 </body>
 </html>
