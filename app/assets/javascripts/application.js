@@ -14,21 +14,26 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require bootstrap/bootstrap-tooltip
 
 //= require_tree .
 
 $('document').ready(function() {
   setTimeout(function() {
-    $('.flash').fadeOut();
-  }, 1500);
+    $('.flash').slideUp(1500);
+  }, 30000);
 });
 $('document').ready(function() {
   setTimeout(function() {
-    $('.alert').fadeOut();
-  }, 1500);
+    $('.alert').slideUp(1500);
+  }, 30000);
 });
 $('document').ready(function() {
   setTimeout(function() {
-    $('.notice').fadeOut();
-  }, 1500);
+    $('.notice').slideUp(1500);
+  }, 30000);
+});
+
+$('document').ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
 });

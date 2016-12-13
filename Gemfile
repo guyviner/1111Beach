@@ -28,6 +28,7 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'bootstrap', '~> 4.0.0.alpha5'
 gem 'font-awesome-rails'
 gem 'bootstrap-sass'
+gem 'bootstrap-tooltip-rails'
 gem 'faker'
 gem 'prawn'
 # Use Capistrano for deployment

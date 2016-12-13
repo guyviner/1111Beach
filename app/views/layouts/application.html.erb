@@ -10,12 +10,13 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="icon" href="https://d30y9cdsu7xlg0.cloudfront.net/png/10397-200.png">
 
   </head>
 
   <body>
 
-    <div class="container">
+    <!-- <div class="container"> -->
     <%= render partial: 'layouts/navbar' %>
 
     <div class="container-fluid">
@@ -28,6 +29,6 @@
     </div>
 
       <%= yield %>
-    </div>
+    <!-- </div> -->
 </body>
 </html>

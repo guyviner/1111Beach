@@ -6,7 +6,7 @@
 @import "rooms";
 // @import "messages";
 @import "users";
-
+@import "bootstrap/bootstrap-tooltip";
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -29,11 +29,16 @@
 
 }
 
+.jumbotron {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
 .palmtree {
-  max-width: 30px;
+  max-width: 20px;
 }
 
 .beach1111 {
-  max-width: 200px;
+  max-width: 140px;
   padding: 10px 0px;
 }

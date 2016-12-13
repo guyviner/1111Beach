@@ -1,18 +1,47 @@
-<div class="sign-in-bg">
-  <div class="container-fluid">
-    <div class="inner-container">
-      <div class="sign-in-logo">
-        <%# image_tag 'logo@2x.png' %>
-      </div>
-      <div class="login-form">
-        <h2>Sign in</h2>
-        <%= form_tag sessions_path do %>
-          <%= text_field_tag :username, nil, placeholder: 'Username' %><br />
-          <%= password_field_tag :password, nil, placeholder: 'Password' %><br />
-          <%= submit_tag 'Sign In', class: 'login-form-button submit' %>
-        <% end %>
 
-      </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 ">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-lock"></span> Login</div>
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">
+                            Username</label>
+                            <%= form_tag sessions_path do %>
+                            <%= label_tag :username %>
+                        <div class="col-sm-9">
+                            <%= text_field_tag :username, nil, placeholder: 'Username', class: "form-control" %>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">
+                            Password</label>
+                        <div class="col-sm-9">
+                          <%= password_field_tag :password, nil, placeholder: 'Password', class: "form-control" %>
+                        </div>
+                    </div>
+                    <div class="form-group last">
+                        <div class="col-sm-offset-3 col-sm-9">
+                          <%= submit_tag 'Sign In', class: 'btn btn-success btn-sm' %>
+                            <!-- <button type="submit" class="btn btn-success btn-sm">
+                                Sign in</button> -->
+                                <!-- <button type="reset" class="btn btn-default btn-sm">
+                                Reset</button> -->
+                                <% end %>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                <div class="panel-footer">
+                    Trouble logging in?
+                <span class="glyphicon glyphicon-question-sign	Try it
+Try it" data-toggle="tooltip" data-placement="left" title="Please double check the spelling of your username and password. If you need to have a login created/reset for you please visit apt. 1903."></span>
+
+                    </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
