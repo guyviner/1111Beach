@@ -33,3 +33,9 @@ $('document').ready(function() {
     $(this).parent().fadeOut();
   });
 });
+
+// $('document').ready(function() {
+//   $('#snow').click(function() {
+//     $(this).parent().toggleClass('.jumbotron');
+//   });
+// });

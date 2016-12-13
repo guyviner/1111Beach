@@ -1,5 +1,21 @@
-<div class="message">
+<div class="message" id="messages">
 
-<p><%= message.created_at %><strong><%=message.user.username%>:</strong> <%=message.content%></p>
+<p><%# message.created_at %><strong><%#message.user.username%></strong> <%#message.content%></p>
 
+<div class="card">
+  <div class="card-block">
+    <div class="row">
+      <div class="col-md-1">
+        <%= gravatar_for message.user %>
+      </div>
+      <div class="col-md-11">
+        <p class="card-text">
+          <span class="text-muted"><%= message.user.username %> at <%= message.created_at %> says</span><br>
+          <%= message.content %>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
 </div>

@@ -1,57 +1,28 @@
-<div class="jumbotron">
-  <h2>Welcome to 1111 Beach!</h2>
-  <i><p>A residents-only space</p></i>
-  <%if user_signed_in?%>
-    <p><span class="glyphicon glyphicon-heart"></span> Nice to see you, <%= current_user.username%> <span class="glyphicon glyphicon-heart"></span></p>
-  <p>I'm demoing this project on December 15th between 6-9pm at my school and will be available to chat with you at that time!</p>
-  <p style="display: inline">
-    Add the event to your
-  </p> <a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=aWdycnIwcGVqN291ZTZraXJkNnBsY3EwYnMgYjRidG42bWQwdTBpbWxkazczZWI4a3NiYWdAZw&amp;tmsrc=b4btn6md0u0imldk73eb8ksbag%40group.calendar.google.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
-  <%end%>
-</div>
+
+  <div class="col-md-3" id="welcome-text">
+    <!-- <div class="container-fluid"> -->
+    <h3>Hiya <%= current_user.username%>!  <img src="http://www.emoji.co.uk/files/google-emojis/smileys-people-android/7283-waving-hand-sign.png" style="max-width: 20px; margin-top: -5px" alt="" /></h3>
+    <%if user_signed_in?%>
+    <p>1903 here. I'm demoing this project on December 15th between 6-9pm at my school and woud love to chat with you at that time!</p>
+    <p style="display: inline">
+      Mark your calendar
+    </p> <a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=aWdycnIwcGVqN291ZTZraXJkNnBsY3EwYnMgYjRidG42bWQwdTBpbWxkazczZWI4a3NiYWdAZw&amp;tmsrc=b4btn6md0u0imldk73eb8ksbag%40group.calendar.google.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+    <%end%>
+    <br>
+    <br>
+
+  </div>
+<!-- </div> -->
 <%# content_for :title, 'admin | Action Cable Chat' %>
+<div class="col-md-9" id="theGoods">
+
 <div class="form-group">
   <label for="comment">Message:</label>
-  <textarea class="form-control" rows="3" id="message_input"></textarea>
+  <textarea class="form-control" rows="2" placeholder="Enter your message here." id="message_input"></textarea>
+  <input type="submit" name="commit" class="btn btn-primary btn-lg">
 </div>
 
-<div class="header">
-  <div class="team-menu"></div>
-
-  <div class="channel-menu">
-    <span class="channel-menu_name"><span class="channel-menu_prefix"></span></span>
-  </div>
-</div>
-<div class="main">
-  <div class="listings">
-    <div class="listings_channels">
-      <h2 class="listings_header"></h2>
-      <ul class="channel_list">
-        <!-- <li class="channel active">
-          <a class="channel_name"><span><span class="prefix"></span></span></a>
-        </li> -->
-        <!-- <li class="channel">
-          <a class="channel_name"><span class="unread"></span><span><span class="prefix"></span></span></a>
-        </li> -->
-      </ul>
-    </div>
-    <div class="listings_direct-messages">
-      <h2 class="listings_header"></h2>
-      <ul class="channel_list">
-        <!-- <li class="channel">
-          <a class="channel_name"><span class="unread"></span><span><span class="prefix"> </span></span></a>
-        </li> -->
-      </ul>
-    </div>
-  </div>
   <div class="message-history" id="messages">
     <%= render @messages %>
-  </div>
-</div>
-<div class="footer">
-  <div class="user-menu">
-    <span class="user-menu_profile-pic"></span><span class="user-menu_username"><%# current_user %></span>
-    <span class="connection_status"></span>
-    <span class="logout"><%# link_to('Logout', destroy_user_session_path, :method => :delete) %></span>
   </div>
 </div>
