@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
-//= require bootstrap/bootstrap-tooltip
 
 //= require_tree .
 
@@ -33,8 +32,4 @@ $('document').ready(function() {
   $('.close').click(function() {
     $(this).parent().fadeOut();
   });
-});
-
-$('document').ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
 });
