@@ -18,21 +18,22 @@
 
 //= require_tree .
 
-// $('document').ready(function() {
-//   setTimeout(function() {
-//     $('.flash').slideUp(1500);
-//   }, 30000);
-// });
-// $('document').ready(function() {
-//   setTimeout(function() {
-//     $('.alert').slideUp(1500);
-//   }, 30000);
-// });
-// $('document').ready(function() {
-//   setTimeout(function() {
-//     $('.notice').slideUp(1500);
-//   }, 30000);
-// });
+$('document').ready(function() {
+  $('.close').click(function() {
+    $(this).parent().fadeOut();
+  });
+});
+$('document').ready(function() {
+  $('.close').click(function() {
+    $(this).parent().fadeOut();
+  });
+});
+
+$('document').ready(function() {
+  $('.close').click(function() {
+    $(this).parent().fadeOut();
+  });
+});
 
 $('document').ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
