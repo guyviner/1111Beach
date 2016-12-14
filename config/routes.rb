@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root to: 'rooms#show'
   get "/sessions/" => 'rooms#show'
   get "/contact/" => 'application#show'
+  
   mount ActionCable.server => '/cable'
 
   resources :users, only: [:edit, :update, :show] do
