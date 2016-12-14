@@ -2,6 +2,9 @@
 class AppearancesChannel < ApplicationCable::Channel
   def subscribed
     # stream_from "some_channel"
+    # broadcast action to all users that someone
+    # push
+    # pull action to alert currently present participants who is connected
   end
 
   def unsubscribed
