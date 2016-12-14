@@ -11,3 +11,11 @@ $ ->
     App.room.speak(e.target.value)
     e.target.value = ''
     e.preventDefault()
+
+  $('#new_message').click ->
+    textarea = $('#message_input')
+
+    if $.trim(textarea.val()).length > 1
+      App.room.speak(textarea.val())
+      textarea.val('')
+    return false

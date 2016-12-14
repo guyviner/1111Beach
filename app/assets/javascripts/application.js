@@ -17,25 +17,21 @@
 
 //= require_tree .
 
-$('document').ready(function() {
+$(function() {
   $('.close').click(function() {
     $(this).parent().fadeOut();
   });
-});
-$('document').ready(function() {
-  $('.close').click(function() {
-    $(this).parent().fadeOut();
-  });
-});
 
-$('document').ready(function() {
   $('.close').click(function() {
     $(this).parent().fadeOut();
   });
-});
 
-// $('document').ready(function() {
-//   $('#snow').click(function() {
-//     $(this).parent().toggleClass('.jumbotron');
-//   });
-// });
+  $('.close').click(function() {
+    $(this).parent().fadeOut();
+  });
+
+  $('#toggle-snow').click(function(e) {
+    e.preventDefault();
+    $("#snow").toggleClass('hidden');
+  });
+}); // this doesn't work

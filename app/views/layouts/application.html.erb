@@ -16,40 +16,20 @@
   </head>
 
   <body>
-  <div class="" id="snow">
-
-    <a class="github-fork-ribbon right-bottom fixed" href="#" title="1111 Make a Wish"></a>
-  </div>
-    <!-- <div class="container"> -->
-    <%= render partial: 'layouts/navbar' %>
 
     <div class="container">
-      <!-- <% if notice %>
-        <div class="alert alert-success alert-dismissable" role="alert"><%= notice %></div>
-      <% end %>
-      <% if alert %>
-      <button
-      type="button"
-      class="close"
-      data-dismiss="alert"
-      aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-        <div class="alert alert-danger alert-dismissable" role="alert"><%= alert %></div>
-        <% end %> -->
+<div class="hidden" id="snow"></div>
+<a class="github-fork-ribbon right-bottom fixed" href="#" title="1111 Make a Wish" id="toggle-snow"></a>
+
+
+
+      <%= render partial: 'layouts/navbar' %>
+
         <% if notice || alert %>
         <div
         class="alert alert-<%= notice ? 'success' : 'danger'%> alert-dismissable"
         role="alert">
         <%= notice || alert %>
-
-        <%# add x button to close notification element %>
-        <!-- <button
-          type="button"
-          class="close"
-          data-dismiss="alert"
-          aria-label="Close">
-        </button> -->
         <span class="close" aria-hidden="true">&times;</span>
       </div>
     <% end %>
@@ -58,6 +38,5 @@
     <div class="container">
       <%= yield %>
     </div>
-    <!-- </div> -->
 </body>
 </html>
