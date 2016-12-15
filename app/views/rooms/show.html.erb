@@ -13,9 +13,11 @@
       <br>
     </div>
 
-    <div class="col-md-12" id="connected-users">
+    <div class="col-md-12" style="margin-top: 5px; background-color: #ccc; border-radius: 5px; display: flex" id="connected-users">
       <!-- User List is here -->
-
+      <p style="margin: 5 0 5"><%= image_tag("http://1.bp.blogspot.com/-Kxj8PwiqsvE/TaEZGnOKfKI/AAAAAAAAACg/Umk-kiGnJIQ/s1600/GreenDot.png", width: "14") %>
+      <%= ActionCable.server.connections.length %> neighbors are online.
+    </p>
     </div>
   </div>
 <!-- </div> -->
