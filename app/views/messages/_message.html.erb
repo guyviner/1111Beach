@@ -14,8 +14,8 @@
       </div>
       <div class="col-md-11">
         <p class="card-text">
-          <span class="text-muted"><%= message.user.username %> at <%= message.created_at %> says</span><br>
-          <%= message.content %>
+          <span class="text-muted"><strong><%= message.user.username %></strong> at <%= message.created_at %> says</span><br>
+          <%= Emoji.replace_unicode_moji_with_images(message.content) %>
         </p>
       </div>
     </div>

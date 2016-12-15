@@ -16,8 +16,14 @@
     <div class="col-md-12" style="margin-top: 5px; background-color: #ccc; border-radius: 5px; display: flex" id="connected-users">
       <!-- User List is here -->
       <p style="margin: 5 0 5"><%= image_tag("http://1.bp.blogspot.com/-Kxj8PwiqsvE/TaEZGnOKfKI/AAAAAAAAACg/Umk-kiGnJIQ/s1600/GreenDot.png", width: "14") %>
-      <%= ActionCable.server.connections.length %> neighbors are online.
+      <%= ActionCable.server.connections.length %> neighbours are online.
     </p>
+    </div>
+
+    <div class="col-md-12" style="margin-top: 5px; background-color: white; border-radius: 5px; display: flex">
+      <a class="twitter-timeline"  href="https://twitter.com/hashtag/vancouver" data-widget-id="809533847998119936">#vancouver Tweets</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
     </div>
   </div>
 <!-- </div> -->

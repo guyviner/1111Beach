@@ -1,3 +1,17 @@
+@media(max-width:800px){
+  // .noPaddingLeft {
+  //   padding:0!important;
+  // }
+
+  .noPaddingLeft {
+    visibility: hidden;
+    display: none;
+
+  }
+
+}
+
+
 @media(max-width:1201px){
     .noPaddingRight {
       padding:0!important;
