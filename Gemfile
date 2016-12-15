@@ -31,6 +31,7 @@ gem 'bootstrap-sass'
 gem 'bootstrap-tooltip-rails'
 gem 'faker'
 gem 'prawn'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

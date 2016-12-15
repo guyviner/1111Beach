@@ -1,5 +1,5 @@
 
-  <div class="col-md-3" >
+  <div class="col-md-3 noPaddingLeft" >
     <div class="col-md-12" id="welcome-text">
       <%if user_signed_in?%>
       <!-- <div class="container-fluid"> -->
@@ -21,11 +21,16 @@
 <%# content_for :title, 'admin | Action Cable Chat' %>
 <div class="col-md-9 noPaddingRight">
 
-<div class="form-group">
-  <label for="comment">Message:</label>
-  <textarea class="form-control" rows="2" placeholder="Enter your message here." id="message_input"></textarea>
-  <input type="button" value="SEND" id="new_message" class="btn btn-primary btn-lg">
-</div>
+
+  <label for="comment" style="padding-top:5px">Message:</label>
+
+
+
+  <div class="" id="newMessage">
+    <textarea class="form-control" rows="3" placeholder="Enter your message here." id="message_input"></textarea>
+    <input type="button" value="SEND" id="new_message" class="btn btn-primary btn-lg">
+  </div>
+
 
   <div class="message-container rounded strech" id="messages">
     <%= render @messages %>

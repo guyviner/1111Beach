@@ -8,6 +8,20 @@
 
   .noPaddingRight {
     padding-right:0!important;
+    // margin-left: 10px;
+  }
+
+@media(max-width:1201px){
+    .noPaddingLeft {
+      padding:0!important;
+    }
+
+}
+
+
+  .noPaddingLeft {
+    padding-left:0!important;
+
   }
 
 

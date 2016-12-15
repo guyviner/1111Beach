@@ -10,9 +10,9 @@
     </li>
     <li>
       <% if current_user.username != "1903" %>
-        <%= link_to "Welcome #{current_user.username}!" %>
+        <%= link_to "Welcome #{current_user.username}!", user_path(current_user) %>
       <% elsif %>
-        <%= link_to "Welcome admin!" %>
+        <%= link_to "Welcome admin!", user_path(current_user) %>
       <% end %>
     </li>
     <li>
