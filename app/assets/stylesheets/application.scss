@@ -98,7 +98,7 @@ textarea {
 }
 
 #welcome-text {
-  background-color: #fff;
+  background-color: #ccc;
   border-radius: 5px;
   padding: 2rem;
 }
@@ -169,7 +169,27 @@ body {
   margin: 0;
 }
 
+
+
 #newMessage {
   display: flex;
+  position: relative;
   margin-bottom: 10px;
+}
+
+#new_message {
+
+ position:absolute;
+ height: 74px;
+right: -1px;
+border-bottom-left-radius: 0px;
+border-top-left-radius: 0px;
+
+}
+.online_status {
+  color: red;
+  transition: color 1s ease;
+  &.online {
+    color: green;
+  }
 }

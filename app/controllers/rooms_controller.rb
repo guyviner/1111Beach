@@ -3,7 +3,7 @@ class RoomsController < ApplicationController
   before_action :authenticate_user
 
   def show
-    @messages = Message.all
+    @messages = Message.order(created_at: :DESC)
   end
 
   def create
