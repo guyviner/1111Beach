@@ -31,6 +31,8 @@ gem 'bootstrap-sass'
 gem 'bootstrap-tooltip-rails'
 gem 'faker'
 gem 'prawn'
+# gem 'emoji'
+# gem 'rails_emoji_picker'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

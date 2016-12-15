@@ -6,12 +6,16 @@
   <div class="card-block">
     <div class="row noMargin">
       <div class="col-md-1">
-        <%= gravatar_for message.user %>
+        <% if message.user.username == "1903" %>
+          <%= image_tag("19032.png", size: "40x40") %>
+        <% else %>
+          <%= gravatar_for message.user %>
+        <% end %>
       </div>
       <div class="col-md-11">
         <p class="card-text">
-          <span class="text-muted"><b><%= message.user.username %> at <%= message.created_at %> says</span><br>
-          <%= message.content %></b>
+          <span class="text-muted"><%= message.user.username %> at <%= message.created_at %> says</span><br>
+          <%= message.content %>
         </p>
       </div>
     </div>
