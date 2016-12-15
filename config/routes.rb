@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   get "/sessions/" => 'rooms#show'
   get "/about/" => 'application#show'
 
-
   mount ActionCable.server => '/cable'
 
   resources :users, only: [:edit, :update, :show] do
