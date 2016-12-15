@@ -16,6 +16,7 @@
 //= require bootstrap-sprockets
 
 //= require_tree .
+//= require_tree ./channels
 
 $(function() {
   $('.close').click(function() {
