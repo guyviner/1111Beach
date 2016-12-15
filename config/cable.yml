@@ -6,7 +6,7 @@ test:
 
 production:
   adapter: redis
-  url: redis://redistogo:fbb829d693e814dbf030250d03385999@sculpin.redistogo.com:11009/
+  url: ENV['REDISCLOUD_URL']
 
 # CREATE A REDIS INSTANCE AND PUT IN A REDISTOGO:..........
 # WATCH TUTORIAL ABOUT This
