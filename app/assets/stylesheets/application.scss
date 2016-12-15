@@ -45,9 +45,13 @@
 //   }
 // }
 
+textarea {
+  resize: none;
+}
+
 .message-container {
-  height: 578px;
-  overflow-y: hidden;
+  height: 100%;
+  overflow-y:scroll;
   overflow-x: hidden;
 
 //   &:-webkit-scrollbar-thumb {
@@ -67,7 +71,9 @@
     background: #fff;
 
     &:nth-child(2n) {
-      background: #F5F5F5;
+      background: #ccc;
+      border: 1px solid #fff;
+
     }
   }
 }
@@ -147,6 +153,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow: hidden;
 }
 
 
